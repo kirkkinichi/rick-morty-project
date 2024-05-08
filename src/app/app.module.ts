@@ -7,15 +7,13 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { HomePageComponent } from './components/home-page/home-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidenavComponent,
     DashboardComponent,
-    HeaderComponent,
-    HomePageComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
