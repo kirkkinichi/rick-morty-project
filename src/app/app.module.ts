@@ -8,6 +8,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CharactersComponent } from './components/characters/characters.component';
+import { LocationsComponent } from './components/locations/locations.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CharactersComponent } from './components/characters/characters.componen
     SidenavComponent,
     DashboardComponent,
     HeaderComponent,
-    CharactersComponent
+    CharactersComponent,
+    LocationsComponent
   ],
   imports: [
     BrowserModule,
