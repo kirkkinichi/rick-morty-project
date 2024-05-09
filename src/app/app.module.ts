@@ -13,6 +13,7 @@ import { LocationsComponent } from './components/locations/locations.component';
 import { EpisodesComponent } from './components/episodes/episodes.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CharacterDetailsComponent } from './components/character-details/character-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     LocationsComponent,
     EpisodesComponent,
     HomePageComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CharacterDetailsComponent
   ],
   imports: [
     BrowserModule,
