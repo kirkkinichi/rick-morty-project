@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 import { AppComponent } from './app.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CharactersComponent } from './components/characters/characters.component';
 import { LocationsComponent } from './components/locations/locations.component';
 import { EpisodesComponent } from './components/episodes/episodes.component';
@@ -24,7 +25,8 @@ import { EpisodesComponent } from './components/episodes/episodes.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

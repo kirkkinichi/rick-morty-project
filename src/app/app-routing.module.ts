@@ -5,10 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { CharactersComponent } from './components/characters/characters.component';
 import { LocationsComponent } from './components/locations/locations.component';
 import { EpisodesComponent } from './components/episodes/episodes.component';
-import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
   { path: 'personagens', component: CharactersComponent },
   { path: 'localizacoes', component: LocationsComponent },
   { path: 'episodios', component: EpisodesComponent }
