@@ -7,6 +7,7 @@ import { LocationsComponent } from './components/locations/locations.component';
 import { EpisodesComponent } from './components/episodes/episodes.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { DetailsComponent } from './components/details/details.component';
 
 const routes: Routes = [  
   { path: '', redirectTo:'/home', pathMatch: 'full' },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'personagens', component: CharactersComponent },
   { path: 'localizacoes', component: LocationsComponent },
   { path: 'episodios', component: EpisodesComponent },  
+  { path: 'detalhes', component: DetailsComponent },  
   { path: "**", component: PageNotFoundComponent }
 ];
 
