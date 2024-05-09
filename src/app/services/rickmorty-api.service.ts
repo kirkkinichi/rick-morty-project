@@ -5,6 +5,7 @@ import { Observable, tap } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
 export class RickmortyApiService {
 
   private characterUrl: string = 'https://rickandmortyapi.com/api/character/';

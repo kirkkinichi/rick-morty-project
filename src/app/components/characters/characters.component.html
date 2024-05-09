@@ -1,6 +1,29 @@
 <!-- Página de Personagens -->
+<div class="row">
+        
 <ng-template ngFor let-character [ngForOf]="getAllCharacters">
-<h1>{{character.name}}</h1>
-<img src="{{character.image}}" alt="{{character.name}}">
+
+    <div class="col-md-6">
+        <div class="character-main-div card mb-3" style="">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="{{character.image}}" class="img-fluid rounded-start" alt="{{character.image}}">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{character.name}}</h5>
+                        <hr>
+                        <p class="text-muted">Status:</p>
+                        <p >{{character.status}}</p>
+
+                        <a routerLink="/detalhes" class="btn details-btn">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+
 </ng-template>
+
+</div>
     
