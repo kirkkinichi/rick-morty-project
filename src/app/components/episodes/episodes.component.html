@@ -1,1 +1,26 @@
-<p>episodes works!</p>
+<!-- Página de Episódios -->
+<div class="row">
+        
+    <ng-template ngFor let-episode [ngForOf]="getAllEpisodes">
+    
+        <div class="col-md-4">
+            <div class="episode-main-div card mb-3" style="">
+                <div class="row g-0">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h5 class="card-title">{{episode.name}}</h5>
+                            <hr>
+                            <h6 class="text-muted">Air date:</h6>
+                            <p >{{episode.air_date}}</p>
+    
+                            <a routerLink="/detalhes" class="btn details-btn">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+        </div>
+    
+    </ng-template>
+    
+    </div>
+        
