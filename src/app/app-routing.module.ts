@@ -10,14 +10,15 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
 
 
+//Rotas
 const routes: Routes = [  
-  { path: '', redirectTo:'/home', pathMatch: 'full' },
+  { path: '', redirectTo:'/home', pathMatch: 'full' }, // Se vazio, redireciona para /home
   { path: 'home', component: HomePageComponent },
   { path: 'personagens', component: CharactersComponent },
   { path: 'localizacoes', component: LocationsComponent },
   { path: 'episodios', component: EpisodesComponent },  
   { path: 'personagem-detalhes', component: CharacterDetailsComponent },  
-  { path: "**", component: PageNotFoundComponent }
+  { path: "**", component: PageNotFoundComponent } // Para páginas não existentes, é utilizado o componente PageNotFoundComponent
 ];
 
 @NgModule({

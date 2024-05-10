@@ -4,15 +4,13 @@
     <br>
 </div>
 
-<div class="row">
-        
-<ng-template ngFor let-character [ngForOf]="getAllCharacters">
+<div class="row">        
 
-    <div class="col-md-6">
-        <div class="character-main-div card mb-3" style="">
+    <div class="col-md-6" *ngFor="let character of characters">
+        <div class="character-main-div card mb-3" >
             <div class="row g-0">
                 <div class="col-md-4">
-                <img src="{{character.image}}" class="img-fluid rounded-start" alt="{{character.image}}">
+                    <img src="{{character.image}}" class="img-fluid rounded-start" alt="{{character.image}}">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -28,7 +26,9 @@
         </div>        
     </div>
 
-</ng-template>
-
 </div>
-    
+
+<ng-container *ngIf="loading">
+    <p>...</p>
+</ng-container>
+  
