@@ -17,7 +17,7 @@
                     <h6 class="text-muted">Dimension:</h6>
                     <p>{{location.dimension}}</p>
 
-                    <a routerLink="/detalhes" class="btn details-btn">Details</a>
+                    <a [routerLink]="['/localizacao-detalhes', location.id]" class="btn details-btn">Details</a>
                 </div>
             </div>
         </div> 
