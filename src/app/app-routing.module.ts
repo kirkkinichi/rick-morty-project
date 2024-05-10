@@ -8,6 +8,7 @@ import { EpisodesComponent } from './components/episodes/episodes.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
+import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
 
 
 //Rotas
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'localizacoes', component: LocationsComponent },
   { path: 'episodios', component: EpisodesComponent },  
   { path: 'personagem-detalhes/:id', component: CharacterDetailsComponent },  
+  { path: 'episodio-detalhes/:id', component: EpisodeDetailsComponent },  
   { path: "**", component: PageNotFoundComponent } // Para páginas não existentes, é utilizado o componente PageNotFoundComponent
 ];
 
