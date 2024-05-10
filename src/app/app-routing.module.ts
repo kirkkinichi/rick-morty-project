@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'personagens', component: CharactersComponent },
   { path: 'localizacoes', component: LocationsComponent },
   { path: 'episodios', component: EpisodesComponent },  
-  { path: 'personagem-detalhes', component: CharacterDetailsComponent },  
+  { path: 'personagem-detalhes/:id', component: CharacterDetailsComponent },  
   { path: "**", component: PageNotFoundComponent } // Para páginas não existentes, é utilizado o componente PageNotFoundComponent
 ];
 

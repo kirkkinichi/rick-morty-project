@@ -1,11 +1,10 @@
-<!-- Página de Personagens -->
+<!-- characters.component.html -->
 <div class="first-section">
     <h4 class="character-page-title">Characters:</h4>
     <br>
 </div>
 
 <div class="row">        
-
     <div class="col-md-6" *ngFor="let character of characters">
         <div class="character-main-div card mb-3" >
             <div class="row g-0">
@@ -18,17 +17,14 @@
                         <hr>
                         <h6 class="text-muted">Status:</h6>
                         <p >{{character.status}}</p>
-
-                        <a routerLink="/personagem-detalhes" class="btn details-btn">Details</a>
+                        <a [routerLink]="['/personagem-detalhes', character.id]" class="btn details-btn">Details</a>
                     </div>
                 </div>
             </div>
         </div>        
     </div>
-
 </div>
 
 <ng-container *ngIf="loading">
     <p>...</p>
 </ng-container>
-  
