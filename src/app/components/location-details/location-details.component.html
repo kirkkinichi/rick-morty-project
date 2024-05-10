@@ -1,1 +1,15 @@
-<p>location-details works!</p>
+<div *ngIf="location">
+    <p>{{location.name}}</p> 
+    <p>{{location.type}}</p>
+    <p>{{location.dimension}}</p>      
+
+    <h4 class="character-description-title">Residents<strong>:</strong></h4>
+    <div class="row">
+        <div class="col-md-2" *ngFor="let resident of residents">
+            <img src="{{resident.image}}" class="img-fluid rounded-start" alt="{{resident.image}}">
+            <h6>{{ resident?.name }}</h6>
+        </div>
+    </div>
+    
+</div>
+  
