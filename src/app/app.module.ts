@@ -14,7 +14,6 @@ import { EpisodesComponent } from './components/episodes/episodes.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
-import { SearchComponent } from './components/search/search.component';
 import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
 import { LocationDetailsComponent } from './components/location-details/location-details.component';
 
@@ -30,7 +29,6 @@ import { LocationDetailsComponent } from './components/location-details/location
     HomePageComponent,
     PageNotFoundComponent,
     CharacterDetailsComponent,
-    SearchComponent,
     EpisodeDetailsComponent,
     LocationDetailsComponent
   ],
