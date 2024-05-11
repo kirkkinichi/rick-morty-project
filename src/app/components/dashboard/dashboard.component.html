@@ -1,6 +1,10 @@
 <div class="first-section">
     <h1 class="home-page-title">The Rick and Morty API</h1>
 </div>
-<app-search-bar></app-search-bar>
+
+<div *ngIf="isSearchBarVisible()">
+    <app-search-bar></app-search-bar>
+</div>
+
 <br>
 <router-outlet></router-outlet>
