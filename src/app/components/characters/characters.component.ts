@@ -1,6 +1,8 @@
 import { Component, HostListener } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { delay } from '../../utils';
+
 
 @Component({
 	selector: 'app-characters',
@@ -27,13 +29,18 @@ export class CharactersComponent {
 		// Inicia solicitação
 		this.loading = true;
 
-		// Solicitação GET para obter os personagens e atualizar com a URL da próxima página
-		this.http.get(this.characterUrl).subscribe((data: any) => {
+		//Delay ao scrollar
+		delay(1500).then(()=> {
+			// Solicitação GET para obter os personagens e atualizar com a URL da próxima página
+				this.http.get(this.characterUrl || "").subscribe((data: any) => {
 
-			this.characters = this.characters.concat(data.results);
-			this.characterUrl = data.info.next;
-			this.loading = false; // Atribuído valor false para indicar que a solicitação foi concluída
+				this.characters = this.characters.concat(data.results);
+				this.characterUrl = data.info.next;
+				this.loading = false; // Atribuído valor false para indicar que a solicitação foi concluída
+			});
 		});
+
+		
 	}
 
 	// Método para detalhar um personagem quando clicar em Details
