@@ -43,11 +43,6 @@ export class CharactersComponent {
 		
 	}
 
-	// Método para detalhar um personagem quando clicar em Details
-	detalharPersonagem(character: any) {
-		this.router.navigate(['/personagem-detalhes', character.id]);
-	}
-
 	// Método chamado ao ocorrer o scroll (rolamento) na janela
 	@HostListener('window:scroll', ['$event'])
 	scrollAction() {
