@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 // Componentes
-import { CharactersComponent } from './components/characters/characters.component';
-import { LocationsComponent } from './components/locations/locations.component';
-import { EpisodesComponent } from './components/episodes/episodes.component';
-import { HomePageComponent } from './components/home-page/home-page.component';
+import { CharactersComponent } from './pages/characters/characters.component';
+import { LocationsComponent } from './pages/locations/locations.component';
+import { EpisodesComponent } from './pages/episodes/episodes.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
 import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
