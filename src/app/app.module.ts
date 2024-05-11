@@ -17,6 +17,7 @@ import { CharacterDetailsComponent } from './components/character-details/charac
 import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
 import { LocationDetailsComponent } from './components/location-details/location-details.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { SearchBarComponent } from './components/search-bar/search-bar.component
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

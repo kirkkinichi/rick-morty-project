@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+const SIDEBAR_PAGES = ['/personagens', '/episodios', '/localizacoes'];
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -13,6 +15,6 @@ export class DashboardComponent {
   isSearchBarVisible():boolean {
     console.log(this.router)
     console.log(this.router.url)
-    return this.router.url !== '/home'
+    return SIDEBAR_PAGES.includes(this.router.url.split('?')[0])
   }
 }
