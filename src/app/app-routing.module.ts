@@ -6,7 +6,7 @@ import { CharactersComponent } from './pages/characters/characters.component';
 import { LocationsComponent } from './pages/locations/locations.component';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { CharacterDetailsComponent } from './components/character-details/character-details.component';
 import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
 import { LocationDetailsComponent } from './components/location-details/location-details.component';
