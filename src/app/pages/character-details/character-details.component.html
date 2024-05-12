@@ -2,19 +2,24 @@
     <img [src]="character.image" [alt]="character.name" class="character-image">
     <h2 class="character-title">{{ character.name }}</h2>
     <hr />
-    <div class="character-info">
-        <h4 class="character-description-title">Status<strong>:</strong><h5> {{ character.status }} </h5></h4>
-        <h4 class="character-description-title">Specie<strong>:</strong><h5> {{ character.species }} </h5></h4> 
-        <h4 class="character-description-title">Gender<strong>:</strong><h5> {{ character.gender }} </h5></h4>         
-        <h4 class="character-description-title">Origin<strong>:</strong><h5> {{ origin?.name }} </h5></h4>
-        <h4 class="character-description-title">Location<strong>:</strong><h5> {{ location?.name }} </h5></h4>
-        <div *ngIf="episodes.length > 0">
+    <div class="character-info row">
+        <h4 class="character-description-title col-md-6">Status<strong>:</strong><h5> {{ character.status }} </h5></h4>
+        <h4 class="character-description-title col-md-6">Specie<strong>:</strong><h5> {{ character.species }} </h5></h4> 
+    </div>
+    <div class="character-info row">
+        <h4 class="character-description-title col-md-6">Gender<strong>:</strong><h5> {{ character.gender }} </h5></h4>         
+        <h4 class="character-description-title col-md-6">Origin<strong>:</strong><h5> {{ origin?.name }} </h5></h4>
+    </div>
+    <div class="character-info row">        
+        <h4 class="character-description-title col-md-6">Location<strong>:</strong><h5> {{ location?.name }} </h5></h4>
+        <div class="col-md-6" *ngIf="episodes.length > 0">
             <h4 class="character-description-title">Episodes<strong>:</strong><h5> {{ character.episodes }} </h5></h4>
             <ul>
                 <li *ngFor="let episode of episodes">{{ episode?.name }}</li>
             </ul>
         </div>
     </div>
-    <hr />
+    
 </div>
+    <hr />
   
