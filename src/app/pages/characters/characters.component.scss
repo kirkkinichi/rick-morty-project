@@ -10,33 +10,3 @@
 .details-btn:hover {
     background-color: #ff00eb !important;
 }
-
-.loader {
-    display: inline-grid;
-    padding: 5px;
-    background: #fff;
-    filter: blur(4px) contrast(12);
-  }
-  .loader:before,
-  .loader:after {
-    content: "";
-    grid-area: 1/1;
-    height: 40px;
-    aspect-ratio: 3;
-    --c: #0000 64%, rgb(0, 255, 85) 66% 98%,#0000 101%;
-    background:
-      radial-gradient(35% 146% at 50% 159%,var(--c)) 0 0,
-      radial-gradient(35% 146% at 50% -59%,var(--c)) 100% 100%;
-    background-size: calc(200%/3) 50%;
-    background-repeat: repeat-x;
-    clip-path: inset(0 100% 0 0);
-    -webkit-mask: repeating-linear-gradient(90deg, rgb(0, 255, 85) 0 10%,#0000 0 20%);
-    animation: l14 1.1s infinite linear;
-  }
-  .loader:after {
-    scale: -1;
-  }
-  @keyframes l14{
-    40%,60% {clip-path: inset(0)}
-    to {clip-path: inset(0 0 0 100%)}
-  }
