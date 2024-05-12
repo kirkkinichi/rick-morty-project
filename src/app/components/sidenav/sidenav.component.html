@@ -11,6 +11,12 @@
         <span>Characters</span>
     </div> 
     <hr />
+    
+    <div class="sidenav-item" [routerLink]="['/localizacoes']" routerLinkActive="active" [queryParamsHandling]="'merge'">
+        <fa-icon [icon]="faLocation"></fa-icon>
+        <span>Locations</span>
+    </div>  
+    <hr />
 
     <div class="sidenav-item" [routerLink]="['/episodios']" routerLinkActive="active" [queryParamsHandling]="'merge'">
         <fa-icon [icon]="faTv"></fa-icon>
@@ -18,9 +24,5 @@
     </div>
     <hr />
 
-    <div class="sidenav-item" [routerLink]="['/localizacoes']" routerLinkActive="active" [queryParamsHandling]="'merge'">
-        <fa-icon [icon]="faLocation"></fa-icon>
-        <span>Locations</span>
-    </div>  
-    <hr />
+    
 </div>
