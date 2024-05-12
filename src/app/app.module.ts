@@ -13,9 +13,9 @@ import { LocationsComponent } from './pages/locations/locations.component';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-import { CharacterDetailsComponent } from './components/character-details/character-details.component';
-import { EpisodeDetailsComponent } from './components/episode-details/episode-details.component';
-import { LocationDetailsComponent } from './components/location-details/location-details.component';
+import { CharacterDetailsComponent } from './pages/character-details/character-details.component';
+import { EpisodeDetailsComponent } from './pages/episode-details/episode-details.component';
+import { LocationDetailsComponent } from './pages/location-details/location-details.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { FormsModule } from '@angular/forms';
 
