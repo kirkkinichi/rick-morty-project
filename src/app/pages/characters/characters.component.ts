@@ -20,6 +20,7 @@ export class CharactersComponent {
 	loading = false; // Indica o estado da solicitação HTTP
 	error: string = '';
 
+	// Construtor cria novo objeto URL com base na characterUrl
 	constructor(private http: HttpClient, private router: Router, private route: ActivatedRoute) {
 		this.route.queryParams.subscribe(params => {
 			this.characters = [];

@@ -19,6 +19,7 @@ export class EpisodesComponent {
 	loading = false; // Indica o estado da solicitação HTTP
 	error: string = '';
 
+	// Construtor cria novo objeto URL com base no episodeUrl
 	constructor(private http: HttpClient, private router: Router, private route: ActivatedRoute) {
 		this.route.queryParams.subscribe(params => {
 			this.episodes = [];

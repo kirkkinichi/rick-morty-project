@@ -14,8 +14,10 @@ export class LoginComponent implements OnInit {
 	password: string = '';
 	loginError: string = '';
 
+	// Construtor
 	constructor(private apiService: ApiService, private authService: AuthService, private router: Router) { }
 
+	// Função de login
 	login(): void {
 		this.apiService.login(this.username, this.password)
 			.subscribe(
@@ -30,7 +32,7 @@ export class LoginComponent implements OnInit {
 								(error) => console.error('Error fetching user data:', error)
 							);
 					} else {
-						// Login failed, display error message
+						// Mostra mensagem de erro no caso do Login falhar
 						this.loginError = response.message;
 					}
 				},
