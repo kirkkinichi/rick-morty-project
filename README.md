@@ -2,7 +2,7 @@
 
 O Kirk and Morty é uma Single-page application que utiliza o framework [Angular](https://angular.io/) e a API : [The Rick and Morty API](https://rickandmortyapi.com/) para listar e detalhar os Personagens, Episódios e os Locais que a série apresenta.
 
-![Tela de Personagens](assets/characters-page.png)
+![Tela de Personagens](/src/assets/characters-page.png)
 
 
 ## Tecnologias e Ferramentas
