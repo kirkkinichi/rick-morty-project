@@ -1,11 +1,11 @@
 <div *ngIf="episode">
-    <p>{{episode.name}}</p>       
-    <p>Episode: {{episode.episode}}</p>    
-    <p>Air date: {{episode.air_date}}</p> 
+    <h4 class="details-description-title">Episode<strong>:</strong><h5> {{episode.name}} </h5></h4>
+    <h4 class="details-description-title">Episode<strong>:</strong><h5> {{episode.episode}} </h5></h4>
+    <h4 class="details-description-title">Air date<strong>:</strong><h5> {{episode.air_date}} </h5></h4>
 
     <h4 class="details-description-title">Showen Characters<strong>:</strong></h4>
     <div class="row">
-        <div class="col-md-2" *ngFor="let character of characters">
+        <div class="col-md-2 text-center" *ngFor="let character of characters">
             <img src="{{character.image}}" class="img-fluid rounded-start" alt="{{character.image}}">
             <h6>{{ character?.name }}</h6>
         </div>
