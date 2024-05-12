@@ -1,0 +1,11 @@
+<div class="dropdown">
+    <button class="dropbtn">
+        <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" />
+    </button>
+    <div class="dropdown-content">
+        <div>{{ userData.name }}</div>
+        <div>{{ userData.email }}</div>
+        <hr />
+        <a class="mb-3" href="/login" (click)="logout()">Logout</a>
+    </div>
+</div>

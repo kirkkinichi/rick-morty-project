@@ -15,8 +15,6 @@ export class ApiService {
 	constructor() { }
 
 	login(username: string, password: string): Observable<any> {
-		console.log(username);
-		console.log(password);
 		if (username === this.userData.username && password === this.userData.password) {
 			localStorage.setItem('is-logged-in', '1');
 			return of({ success: true, message: 'Login successful' });

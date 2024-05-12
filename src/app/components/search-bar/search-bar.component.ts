@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { faSearch } from '@fortawesome/free-solid-svg-icons'; 
 
 export const SIDEBAR_PAGES = ['/personagens', '/episodios', '/localizacoes'];
 
@@ -12,7 +11,6 @@ export const SIDEBAR_PAGES = ['/personagens', '/episodios', '/localizacoes'];
 export class SearchBarComponent implements OnInit{
 
   userInput: string = '';
-  faSearch = faSearch;
 
   constructor(private router: Router, private route: ActivatedRoute) { }
 

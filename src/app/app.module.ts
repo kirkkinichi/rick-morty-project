@@ -21,6 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './pages/login/login.component';
 import { AuthGuard } from './guards/auth/auth.guard';
 import { AuthService } from './services/auth/auth.service';
+import { DropdownComponent } from './components/dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AuthService } from './services/auth/auth.service';
     EpisodeDetailsComponent,
     LocationDetailsComponent,
     SearchBarComponent,
-    LoginComponent
+    LoginComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
