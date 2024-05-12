@@ -65,7 +65,7 @@ export class EpisodesComponent {
 	handleError(error: HttpErrorResponse) {
 		this.loading = false;
 		if (error.status === 404) {
-			this.error = 'Nenhum personagem encontrado.'
+			this.error = 'Nenhum episódio encontrado.'
 		} else {
 			this.error = 'Ops! Erro ao processar uma requisição.'
 		}
