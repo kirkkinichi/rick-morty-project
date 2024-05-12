@@ -1,9 +1,9 @@
 <!-- Cabeçalho fixo -->
-<div class="header">
+<div class="header" *ngIf="authService.isLoggedIn">
     <app-header></app-header>
 </div>
 
-<div class="dashboard-container">
+<div class="dashboard-container" *ngIf="authService.isLoggedIn">
     <!-- Menu lateral fixo -->
     <div class="sidenav">
         <app-sidenav></app-sidenav>
@@ -14,4 +14,4 @@
     </div>
 </div>
 
-<router-outlet></router-outlet>
+<app-login *ngIf="!authService.isLoggedIn"></app-login>

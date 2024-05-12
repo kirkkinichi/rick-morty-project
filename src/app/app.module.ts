@@ -18,6 +18,9 @@ import { EpisodeDetailsComponent } from './pages/episode-details/episode-details
 import { LocationDetailsComponent } from './pages/location-details/location-details.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './pages/login/login.component';
+import { AuthGuard } from './guards/auth/auth.guard';
+import { AuthService } from './services/auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     CharacterDetailsComponent,
     EpisodeDetailsComponent,
     LocationDetailsComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -42,7 +46,10 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    AuthGuard,
+    AuthService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
