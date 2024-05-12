@@ -73,8 +73,12 @@ fa-icon {
 // Cards - Página Inicial
 .card-container-section {    
     border-radius: 5px;
-    box-shadow: 4px 4px 4px #b6b6b6;
+    box-shadow: 5px 5px 5px #b6b6b6;
     padding: 20px;
+}
+
+.card-img-top {
+    max-height: 200px;
 }
 
 .home-card {
