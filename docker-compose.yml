@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  kirk-and-morty-app:
+    container_name: kirk-and-morty-app
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    networks:
+      - rm-network
+
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    command: tunnel --no-autoupdate run --token eyJhIjoiZDkzOTY4MmRjMzQzNDc1NjllMTBhMTJmMjU3YmYwYjYiLCJ0IjoiZDU4YjY2NTAtYjI1MC00MGZkLTljZjgtMDdhZGVkMjZlMTY2IiwicyI6Ik0yRmxOR001WWpFdFpUZzVZaTAwWmpVMkxXRXdPRGt0TVRRNVpqRmhPVFU0TldWaiJ9
+    restart: always
+    networks:
+      - rm-network
+    depends_on:
+      - kirk-and-morty-app
+
+networks:
+  rm-network:
+    driver: bridge
