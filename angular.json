@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "rick-morty-project": {
+    "kirk-and-morty": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/rick-morty-project",
+            "outputPath": "dist/kirk-and-morty",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "rick-morty-project:build:production"
+              "buildTarget": "kirk-and-morty:build:production"
             },
             "development": {
-              "buildTarget": "rick-morty-project:build:development"
+              "buildTarget": "kirk-and-morty:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "rick-morty-project:build"
+            "buildTarget": "kirk-and-morty:build"
           }
         },
         "test": {
