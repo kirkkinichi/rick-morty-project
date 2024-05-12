@@ -30,3 +30,9 @@
         <div class="loader"></div>
     </div>
 </ng-container>
+
+<ng-container *ngIf="error">
+    <div class="w-100 d-flex justify-content-center">
+        <h5> {{error}} </h5>
+    </div>
+</ng-container>

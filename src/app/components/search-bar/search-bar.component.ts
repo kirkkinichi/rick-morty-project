@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { faSearch } from '@fortawesome/free-solid-svg-icons'; 
+
+export const SIDEBAR_PAGES = ['/personagens', '/episodios', '/localizacoes'];
 
 @Component({
   selector: 'app-search-bar',
@@ -12,7 +14,7 @@ export class SearchBarComponent implements OnInit{
   userInput: string = '';
   faSearch = faSearch;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private route: ActivatedRoute) { }
 
   onInputChanged() {
     this.router.navigate([], { queryParams: { inputParam: this.userInput } })
@@ -20,8 +22,12 @@ export class SearchBarComponent implements OnInit{
   }
 
   ngOnInit():void {
-    const localItem = sessionStorage.getItem("search-input")
-    this.userInput = localItem || '';
-    this.router.navigate([], { queryParams: { inputParam: this.userInput } })
+    this.route.queryParams.subscribe(params => {
+      const foundParamInput = params['inputParam']
+      if (foundParamInput) sessionStorage.setItem("search-input", foundParamInput)
+      const localItem = sessionStorage.getItem("search-input")
+      this.userInput = localItem || '';
+      this.router.navigate([], { queryParams: { inputParam: this.userInput } })
+    });  
   }
 }
