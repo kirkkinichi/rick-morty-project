@@ -53,6 +53,20 @@ fa-icon {
     margin-right: 15px;
 }
 
+@media screen and (max-width: 768px) {
+    .sidenav {
+        width: 61px;
+    }
+    .sidenav-item {        
+        & span {
+            display: none;
+        }
+    }
+    .sidenav-items {        
+        padding: 0px;
+    }
+}
+
 // Cabeçalho
 .header {
     position: fixed;
