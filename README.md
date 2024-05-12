@@ -28,12 +28,31 @@ O Kirk and Morty é uma Single-page application que utiliza o framework [Angular
 git clone https://github.com/kirkkinichi/rick-morty-project.git
 ```
 
-- Acesse a pasta principal do projeto
+- Abra o projeto em algum editor de código
 - Execute o comando `ng serve` no terminal
 - Navegue para `http://localhost:4200/`
+
+## Para acessar o conteúdo do site
 - Faça o login na aplicação, utilizando os campos:
-- - Username = admin
-- - Password = admin
+    - Username = admin
+    - Password = admin
+
+## Como executar o projeto em Docker (local)
+
+- Instalar [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- Executar o comando: `docker-compose up --build kirk-and-morty -d` no terminal da aplicação 
+
+## Como executar o projeto em Docker (Cloudflare customizado)
+
+- Instalar [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+- Configurar um tunnel Docker na [Cloudflare](https://cloudflare.com)
+- Utilizar o token do tunnel no arquivo .env
+- Executar o comando: `docker-compose up --build -d` no terminal da aplicação
+
+
+## Live Preview
+
+https://kirk-and-morty.kirksilva.com/login
 
 ## Autor
 
