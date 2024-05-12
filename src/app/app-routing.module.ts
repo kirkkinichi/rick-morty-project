@@ -6,7 +6,6 @@ import { CharactersComponent } from './pages/characters/characters.component';
 import { LocationsComponent } from './pages/locations/locations.component';
 import { EpisodesComponent } from './pages/episodes/episodes.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { CharacterDetailsComponent } from './pages/character-details/character-details.component';
 import { EpisodeDetailsComponent } from './pages/episode-details/episode-details.component';
 import { LocationDetailsComponent } from './pages/location-details/location-details.component';
@@ -24,8 +23,7 @@ const routes: Routes = [
   { path: 'personagem-detalhes/:id', component: CharacterDetailsComponent, canActivate: [(next: ActivatedRouteSnapshot, state: RouterStateSnapshot) => inject(AuthGuard).canActivate(next, state)] },  
   { path: 'episodio-detalhes/:id', component: EpisodeDetailsComponent, canActivate: [(next: ActivatedRouteSnapshot, state: RouterStateSnapshot) => inject(AuthGuard).canActivate(next, state)] },  
   { path: 'localizacao-detalhes/:id', component: LocationDetailsComponent, canActivate: [(next: ActivatedRouteSnapshot, state: RouterStateSnapshot) => inject(AuthGuard).canActivate(next, state)] },  
-  { path: 'login', component: LoginComponent },  
-  { path: "**", component: PageNotFoundComponent, canActivate: [(next: ActivatedRouteSnapshot, state: RouterStateSnapshot) => inject(AuthGuard).canActivate(next, state)] } // Para páginas não existentes, é utilizado o componente PageNotFoundComponent
+  { path: 'login', component: LoginComponent }  
 ];
 
 @NgModule({
