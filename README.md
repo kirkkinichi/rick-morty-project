@@ -17,8 +17,6 @@ O Kirk and Morty é uma Single-page application que utiliza o framework [Angular
 
 - Instalar [Node.js e npm](https://nodejs.org/en) 
 - Instalar [Angular CLI](https://angular.io/cli)
-- Utilizar algum editor de código
-
 
 ## Como executar o projeto
 
@@ -27,8 +25,6 @@ O Kirk and Morty é uma Single-page application que utiliza o framework [Angular
 ```bash
 git clone https://github.com/kirkkinichi/rick-morty-project.git
 ```
-
-- Abra o projeto em algum editor de código
 - Execute o comando `ng serve` no terminal
 - Navegue para `http://localhost:4200/`
 
